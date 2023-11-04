@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.028">
+    <testcase classname="Registration of Users" name="Register User with List of Data" time="0.003">
+        <system-out><![CDATA[Given User is on Registration Page..........................................passed
+When User enters following user details.....................................passed
+Then User Registration is Successful........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Registration of Users" name="Register User with List of Data Columns" time="0.001">
+        <system-out><![CDATA[Given User is on Registration Page..........................................passed
+When User enters following user details columns.............................passed
+Then User Registration is Successful........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
+ssed
+Then User calculates "520"..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Calculate Billing Amount" name="Calculate Bills 3" time="0">
+        <system-out><![CDATA[Given User is on Billing Page...............................................passed
+When User enter Billing Amount "100"........................................passed
+And User enter Tax Amount "5.5".............................................passed
+Then User calculates "105.5"................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

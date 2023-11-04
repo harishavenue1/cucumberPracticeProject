@@ -1,0 +1,379 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-11-04T12:38:41.702Z",
+        "line": 3,
+        "name": "Register User with List of Data",
+        "description": "",
+        "id": "registration-of-users;register-user-with-list-of-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 104000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Registration Page",
+            "match": {
+              "location": "stepDefinitions.UserRegistrationSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 987000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters following user details",
+            "match": {
+              "location": "stepDefinitions.UserRegistrationSteps.user_enters_following_user_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name1",
+                  "city1",
+                  "email1",
+                  "mob1"
+                ]
+              },
+              {
+                "cells": [
+                  "name2",
+                  "city2",
+                  "email2",
+                  "mob2"
+                ]
+              },
+              {
+                "cells": [
+                  "name3",
+                  "city3",
+                  "email3",
+                  "mob3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Registration is Successful",
+            "match": {
+              "location": "stepDefinitions.UserRegistrationSteps.user_registration_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-04T12:38:41.709Z",
+        "line": 11,
+        "name": "Register User with List of Data Columns",
+        "description": "",
+        "id": "registration-of-users;register-user-with-list-of-data-columns",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on Registration Page",
+            "match": {
+              "location": "stepDefinitions.UserRegistrationSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 543000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters following user details columns",
+            "match": {
+              "location": "stepDefinitions.UserRegistrationSteps.user_enters_following_user_details_columns(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "city",
+                  "email",
+                  "mob"
+                ]
+              },
+              {
+                "cells": [
+                  "name1",
+                  "city1",
+                  "email1",
+                  "mob1"
+                ]
+              },
+              {
+                "cells": [
+                  "name2",
+                  "city2",
+                  "email2",
+                  "mob2"
+                ]
+              },
+              {
+                "cells": [
+                  "name3",
+                  "city3",
+                  "email3",
+                  "mob3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User Registration is Successful",
+            "match": {
+              "location": "stepDefinitions.UserRegistrationSteps.user_registration_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration of Users",
+    "description": "",
+    "id": "registration-of-users",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/UserRegistration.feature",
+    "tags": []
+  }
+] "name": "Product with name \"Apple MacBook Pro\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple MacBook Pro\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.SearchSteps.product_with_name_should_be_displayed(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 40000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "myHooks.SearchHooks.updateStatusToReport()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-04T12:38:40.694Z",
+        "before": [
+          {
+            "result": {
+              "duration": 64000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "myHooks.SearchHooks.setup_browser(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 33000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "myHooks.SearchHooks.setup_url()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Search a Product - Mobile",
+        "description": "",
+        "id": "amazon-search;search-a-product---mobile",
+        "after": [
+          {
+            "result": {
+              "duration": 41000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "myHooks.SearchHooks.tearDown_logout()"
+            }
+          },
+          {
+            "result": {
+              "duration": 51000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "myHooks.SearchHooks.tearDown_browser(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 42000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 38000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "myHooks.SearchHooks.takeScreenShot()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "I have a search field on Amazon Page",
+            "match": {
+              "location": "stepDefinitions.SearchSteps.i_have_a_search_field_on_amazon_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 35000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "myHooks.SearchHooks.updateStatusToReport()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 32000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "myHooks.SearchHooks.takeScreenShot()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "I search for a product with name \"Apple iPhone\" and price 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Apple iPhone",
+                  "offset": 34
+                },
+                {
+                  "val": "200",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.SearchSteps.i_search_for_a_product_with_name_and_price(java.lang.String,java.lang.Integer)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 55000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "myHooks.SearchHooks.updateStatusToReport()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 41000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "myHooks.SearchHooks.takeScreenShot()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "Product with name \"Apple iPhone\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple iPhone\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.SearchSteps.product_with_name_should_be_displayed(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 91000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "myHooks.SearchHooks.updateStatusToReport()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Search",
+    "description": "",
+    "id": "amazon-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/Search.feature",
+    "tags": []
+  }
+]
